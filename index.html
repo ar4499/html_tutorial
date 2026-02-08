@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML基礎マスターガイド</title>
+    <meta
+      name="description"
+      content="HTMLの基礎からセマンティックな構造までを網羅したチュートリアルページです。"
+    />
+    <meta name="keywords" content="HTML, 初心者, セマンティックHTML, OGP" />
+    <meta name="author" content="Gemini Tutorial" />
+    <link rel="canonical" href="https://example.com/html-basis" />
+
+    <meta property="og:title" content="HTML基礎マスターガイド" />
+    <meta
+      property="og:description"
+      content="HTMLの基本要素を1枚のページで学習できる完全サンプルです。"
+    />
+    <meta
+      property="og:image"
+      content="https://example.com/images/html-ogp.jpg"
+    />
+    <meta property="og:url" content="https://example.com/html-basis" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="プログラミング学習サイト" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header,
+      nav,
+      main,
+      section,
+      aside,
+      footer {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #eee;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML基礎チュートリアル</h1>
+      <p>プログラミング初心者向けの構造化ガイド</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#structure">ページ構造</a></li>
+        <li><a href="#elements">代表的な要素</a></li>
+        <li><a href="#form">フォーム</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <section id="structure">
+          <h2>1. セマンティックなレイアウト</h2>
+          <p>
+            HTMLは単なる見た目ではなく、<strong>意味(セマンティクス)</strong>を正しく伝えることが重要です。
+          </p>
+          <hr />
+          <p>
+            例えば、<code>&lt;main&gt;</code>や<code>&lt;article&gt;</code>を使うことで、検索エンジンに主要な内容を伝えます。
+          </p>
+        </section>
+
+        <section id="elements">
+          <h2>2. リストとテーブルの活用</h2>
+          <h3>学習のメリット</h3>
+          <ol>
+            <li>構造の理解が深まる</li>
+            <li>SEOに強くなる</li>
+            <li>アクセシビリティが向上する</li>
+          </ol>
+
+          <h3>要素一覧表</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>タグ</th>
+                <th>役割</th>
+                <th>種類</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&lt;div&gt;</td>
+                <td>汎用的なグループ化</td>
+                <td>ブロック要素</td>
+              </tr>
+              <tr>
+                <td>&lt;span&gt;</td>
+                <td>テキスト内の一部装飾</td>
+                <td>インライン要素</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="media">
+          <h2>3. マルチメディアと空要素</h2>
+          <p>
+            画像を表示するには
+            <code>&lt;img&gt;</code> タグ(空要素)を使用します。
+          </p>
+          <img
+            src="https://placehold.co/150"
+            alt="サンプル画像"
+            title="これはサンプル画像です"
+          />
+          <br />
+          <a
+            href="https://developer.mozilla.org/ja/docs/Web/HTML"
+            target="_blank"
+            rel="noopener"
+            >MDN公式サイトで詳細を見る</a
+          >
+        </section>
+
+        <section id="form">
+          <h2>4. ユーザー入力フォーム</h2>
+          <form action="#" method="post">
+            <div>
+              <label for="username">お名前:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="田中 太郎"
+                required
+              />
+            </div>
+            <div>
+              <label>お問い合わせ内容:</label><br />
+              <textarea name="message" rows="4" cols="40"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">送信する</button>
+          </form>
+        </section>
+      </article>
+
+      <aside>
+        <h3>関連情報</h3>
+        <p>
+          CSSを学ぶことで、このHTMLに自由なデザインを適用できるようになります。
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 HTML Tutorial. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
